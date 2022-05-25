@@ -1,19 +1,13 @@
 // Este es el codigo del cuadrado
 console.group("Cuadrado");
-  //const ladoCuadrado = 5;
- // console.log("Los lados del cuadrado miden:" + ladoCuadrado);
-
+  
   function perimetroCuadrado(lado) {
       return lado * 4;
   }
   perimetroCuadrado()
-  //console.log("El perimetro del cuadrado es:" + perimetroCuadrado);
-
-  //const areaCuadrado = ladoCuadrado * ladoCuadrado;
   function areaCuadrado(lado) {
       return lado * lado;
   }
-  //console.log("El area del cuadrado es:" + areaCuadrado);
 console.groupEnd
 
 // Este es el codigo del triangulo
@@ -39,3 +33,29 @@ console.group("Circulo");
      return (radio * radio) * 3.1415
  }
 console.groupEnd
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const perimetroC = perimetroCuadrado(value);
+    alert(perimetroC);
+}
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const areaC = areaCuadrado(value);
+    alert(areaC);
+
+}
+function calcularPerimetroTriangulo(){
+    const input = document.getElementById("InputTriangulo");
+    const value = input.value;
+    const perimetroT = perimetroTriangulo(value);
+    alert(perimetroT);
+}
+function calcularAreaTriangulo(){
+    const input = document.getElementById("InputTriangulo");
+    const value = input.value;
+    const areaT = areaTriangulo(value);
+    alert(areaT);
+}
